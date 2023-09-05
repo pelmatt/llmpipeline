@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Pipeline Builder</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <svg id="pipeCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></svg>
+
+    <div id="header">
+        <h1>Large Language Model Pipeline Builder</h1>
+    </div>
+
+    <div id="apiKeyContainer">
+    <label for="apiKey">API Key:</label>
+    <input type="password" id="apiKey" placeholder="Enter your OpenAI API Key">
+    </div>
+
+
+    <div id="runButtonContainer">
+        <button id="runButton">Run Pipeline</button>
+        <button id="stopButton">Stop Pipeline</button>
+    </div>
+    <button id="downloadFunctionButton">Download Function</button>
+
+    <div id="dragDropContainer">
+        <div id="openAIUnits" class="draggableContainer">
+            <h2>OpenAI</h2>
+            <!-- Draggable API units go here -->
+        </div>
+
+        <div id="customUnits" class="draggableContainer">
+            <h2>Custom</h2>
+            <!-- Draggable custom units go here -->
+        </div>
+
+        <div id="inputUnits" class="draggableContainer">
+            <h2>Input</h2>
+            <!-- Draggable input units go here -->
+        </div>
+
+        <div id="Output" class="draggableContainer">
+            <h2>Output</h2>
+            <!-- Draggable output units go here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

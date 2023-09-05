@@ -1,0 +1,46 @@
+.unit {
+    position: absolute;
+    /* Other styling */
+}
+h2 {
+    display: inline-block;
+    width: auto;
+    
+    cursor: pointer;
+}
+
+.port {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.in-port {
+    background-color: green;
+    left: 0;
+}
+
+.out-port {
+    background-color: red;
+    right: 0;
+}
+
+.handle {
+    position: relative;  // Needed to position the ports absolutely within the handle
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    background-color: #ccc;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+   
+    justify-content: center;  // Center the text horizontally
+}
+.delete-text {
+    pointer-events: all;
+}
+
