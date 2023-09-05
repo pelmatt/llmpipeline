@@ -24,6 +24,7 @@ HTML/JS for prototyping LLM architectures requiring api call chaining.
   <div id="tweet2">
     <p>
       👀 The example video demonstrates a basic use-case: Querying stored user memories to enhance the AI assistant's response to current queries.
+     <a href="https://twitter.com/MozarellaPesto/status/1699077502440788101?s=20" target="_blank">[X video]</a>
     </p>
   </div>
 
